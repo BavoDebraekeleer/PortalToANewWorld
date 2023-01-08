@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 7956303697179344348, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956303697179344349, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
@@ -392,7 +392,7 @@ PrefabInstance:
     - target: {fileID: 7956303697179344352, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
       propertyPath: fadeInOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956303697179344352, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
@@ -402,7 +402,7 @@ PrefabInstance:
     - target: {fileID: 7956303697179344352, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
       propertyPath: playVideoOnTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7956303697179344352, guid: 394bb608b7cb1974badf90458c212fc3,
         type: 3}
@@ -543,6 +543,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956303697252066897, guid: 394bb608b7cb1974badf90458c212fc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956303697252069573, guid: 394bb608b7cb1974badf90458c212fc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 394bb608b7cb1974badf90458c212fc3, type: 3}
@@ -703,7 +713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &750285737
 Transform:
   m_ObjectHideFlags: 0
@@ -712,8 +722,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750285736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000095367, y: 0, z: 1.8179998}
-  m_LocalScale: {x: 3.403702, y: 1.9145824, z: 1.327}
+  m_LocalPosition: {x: -0.00000095367, y: 0.000000014901, z: 1.533}
+  m_LocalScale: {x: 3.6926763, y: 2.9898152, z: 1.327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 709790592}
@@ -727,7 +737,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750285736}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d68c03a08a2f5bc4991ac34e45efd864, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5d794cbe8019b774bbb21d4401c8698f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -822,7 +832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!328 &793521952
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -831,7 +841,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793521951}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d68c03a08a2f5bc4991ac34e45efd864, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5d794cbe8019b774bbb21d4401c8698f, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1032,7 +1042,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 25
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

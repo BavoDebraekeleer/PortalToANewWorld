@@ -28,19 +28,23 @@ public class Trigger : MonoBehaviour
         {
             if (!_isCommand1Given)
             {
-                if(fadeOutOnCmd1)
-                    cameraOverlay.SetFadeOut();
-                cameraOverlay.FadeOut();
-                
+                if (fadeOutOnCmd1)
+                {
+                    //cameraOverlay.SetFadeOut();
+                    cameraOverlay.FadeOut();
+                }
+
                 gameManager.Trigger(command1);
                 _isCommand1Given = true;
             }
             else
             {
-                if(fadeOutOnCmd2)
-                    cameraOverlay.SetFadeOut();
-                cameraOverlay.FadeOut();
-                
+                if (fadeOutOnCmd2)
+                {
+                    //cameraOverlay.SetFadeOut();
+                    cameraOverlay.FadeOut();
+                }
+
                 gameManager.Trigger(command2);
             }
         }

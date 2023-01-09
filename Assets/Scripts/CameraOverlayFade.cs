@@ -38,7 +38,20 @@ public class CameraOverlayFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (nonTrigger)
+        if (_externalFadeOut)
+        {
+            FadeOut();
+
+            if (playAudioOnTrigger)
+                StartCoroutine(PlayAudio());
+            
+            if (playVideoOnTrigger)
+                _videoPlayer.Play();
+
+            if (turnOffAudioOnTrigger)
+                StartCoroutine(TurnOffAudio());
+        }
+        else if (nonTrigger)
         {
             if (Physics.CheckSphere(transform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
                 FadeOut();
@@ -62,20 +75,6 @@ public class CameraOverlayFade : MonoBehaviour
             }
             else
                 FadeIn();
-        }
-
-        if (_externalFadeOut)
-        {
-            FadeOut();
-
-            if (playAudioOnTrigger)
-                StartCoroutine(PlayAudio());
-            
-            if (playVideoOnTrigger)
-                _videoPlayer.Play();
-
-            if (turnOffAudioOnTrigger)
-                StartCoroutine(TurnOffAudio());
         }
     }
 
